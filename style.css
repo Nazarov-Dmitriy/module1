@@ -205,6 +205,7 @@ li:first-child>a {
 
 .features_card_item:first-child .img_ellipse {
     position: absolute;
+/*TODO: не используйте дробные пиксели, пиксель -- это как точка. Разные браузеры по-разному на это реагируют */
     width: 61.85px;
     height: 36.55px;
     left: 462.21px;
@@ -343,6 +344,8 @@ li:first-child>a {
     width: 400px;
     min-height: 330px;
     background: #FFFFFF;
+/*TODO: не нужно использовать единицы измерения нулевым значениям */
+/*TODO: rgb принимает только три значения */
     box-shadow: 0px 20px 0px rgb(167 40 219 / 10%);
     border-radius: 20px;
     margin-right: 20px;
@@ -439,6 +442,7 @@ li:first-child>a {
 .footer_wrap {
     display: flex;
     justify-content: space-between;
+/*TODO: сначала устанавливаете отступ для правой стороны, потом перетираете следующим свойством */
     margin-right: 30px;
     margin: 310px 0 67px 0;
 }
